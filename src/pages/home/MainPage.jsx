@@ -57,7 +57,7 @@ export default function MainPage() {
             const xAuth = generateXAuth();
             const requestData = {
                 action: "filter",
-                params: { "price": parseFloat(priceFilter) }
+                params: { "price": parseFloat(priceFilter), "offset": 0, "limit": 50 }
             };
             const response = await axios.post(
                 `${BASE_URL}`,
@@ -101,7 +101,7 @@ export default function MainPage() {
             const xAuth = generateXAuth();
             const requestData = {
                 action: "filter",
-                params: { "brand": brandFilter }
+                params: { "brand": brandFilter, "offset": 0, "limit": 50 }
 
             };
             const response = await axios.post(
