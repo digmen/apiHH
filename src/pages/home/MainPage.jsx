@@ -277,6 +277,7 @@ export default function MainPage() {
                     <button onClick={nextPage} type='submit'>Следущая</button>
                 </div>
             </div>
+            <a href='https://github.com/digmen/apiHH'>Сылка на GitHub</a>
         </div>
     );
 }
